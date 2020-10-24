@@ -1,28 +1,19 @@
 package com.fituous.api.models;
 
-public class Run implements Distance, Pace {
-    @Override
-    public int hours() {
-        return 0;
+public class Run {
+    int hours;
+    int minutes;
+
+    public Run(int minutes, int hours){
+        this.hours = hours;
+        this.minutes = minutes;
     }
 
-    @Override
-    public int minutes() {
-        return 0;
+    public int getHours() {
+        return hours;
     }
 
-    @Override
-    public int seconds() {
-        return 0;
-    }
-
-    @Override
-    public int milliseconds() {
-        return 0;
-    }
-
-    @Override
-    public long distance() {
-        return 0;
+    public int getMinutes() {
+        return minutes;
     }
 }
