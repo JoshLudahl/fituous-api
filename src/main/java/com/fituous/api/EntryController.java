@@ -2,6 +2,8 @@ package com.fituous.api;
 
 import com.fituous.api.models.Run;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,5 +17,13 @@ public class EntryController {
     @GetMapping("/run")
     public Run getRun() {
         return new Run(34,5);
+    }
+
+    @PostMapping("/run/add")
+    public Run addRun(
+            //add body param
+    ) {
+        //process then return run after adding
+        return new Run(34, 4);
     }
 }
