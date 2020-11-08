@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EntryController {
 
+    @GetMapping("/")
+    public int index() {
+        return 200;
+    }
+
     @GetMapping("/status")
     public Status status() {
         return new Status(200, "Things are running");
