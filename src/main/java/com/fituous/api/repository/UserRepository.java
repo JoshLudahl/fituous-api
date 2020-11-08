@@ -1,9 +1,9 @@
 package com.fituous.api.repository;
 
+import com.fituous.api.models.user.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.fituous.api.models.workouts.Run;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
-public interface RunRepository extends MongoRepository<Run, String> {
+public interface UserRepository extends MongoRepository<User, String> {
 }

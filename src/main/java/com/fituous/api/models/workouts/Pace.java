@@ -1,4 +1,4 @@
-package com.fituous.api.models;
+package com.fituous.api.models.workouts;
 
 public interface Pace {
     int hours();
